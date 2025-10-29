@@ -1,8 +1,5 @@
-resolvers ++= Seq(
-  Resolver.typesafeRepo("releases"),
-  Resolver.sbtPluginRepo("releases")
-)
-
-addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.7.1")
-addSbtPlugin("com.lucidchart" % "sbt-scalafmt" % "1.16")
-addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.9.24")
+Seq(
+  "org.scala-js"   % "sbt-scalajs"  % "1.20.1",
+  "org.scalameta"  % "sbt-scalafmt" % "2.5.2",
+  "ch.epfl.scala"  % "sbt-scalafix" % "0.12.1"
+).map(addSbtPlugin)
